@@ -1,13 +1,17 @@
 import React from "react";
+import "./Navbar.css";
 
 export default function Navbar() {
   return (
-    <nav style={{ padding: "1rem", background: "#222", color: "white" }}>
-      <a href="#home" style={{ margin: "1rem" }}>Home</a>
-      <a href="#about" style={{ margin: "1rem" }}>About</a>
-      <a href="#projects" style={{ margin: "1rem" }}>Projects</a>
-      <a href="#resume" style={{ margin: "1rem" }}>Resume</a>
-      <a href="#contact" style={{ margin: "1rem" }}>Contact</a>
+    <nav className="navbar">
+      <div className="logo">MyPortfolio</div>
+      <ul className="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   );
 }
